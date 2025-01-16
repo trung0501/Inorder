@@ -35,13 +35,13 @@ class BinaryTree
             return;
         }
 
-        // Duyệt cây con bên trái
+        // Browse the subtree on the left
         InOrderTraversal(node.Left);
 
-        // Xử lý nút hiện tại
+        // Process the current node
         Console.Write(node.Data + " ");
 
-        // Duyệt cây con bên phải
+        // Browse the subtree on the right
         InOrderTraversal(node.Right);
     }
 }
@@ -50,7 +50,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Tạo một cây nhị phân mẫu
+        // Create a sample binary tree
         BinaryTree tree = new BinaryTree();
 
         /*
